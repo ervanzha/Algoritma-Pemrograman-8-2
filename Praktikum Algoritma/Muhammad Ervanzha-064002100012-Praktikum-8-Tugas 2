@@ -1,0 +1,13 @@
+@author: ervan
+"""
+x = int(input("masukan angka anda : "))
+z = int(input("akan di pangkatkan ke berapa: "))
+ 
+def pangkat(x,z):
+ 
+ if z >= 1 :
+     return x * pangkat(x, z - 1)
+ 
+ return x
+hasil = pangkat(x, z)
+print(f"hasil nya adalah = {hasil}")
